@@ -1,9 +1,11 @@
-package main
+package practiceCommon
 
 import (
 	"fmt"
 	"strconv"
 )
+
+var isAction bool = false
 
 const Pi = 3.14
 const (
@@ -26,10 +28,10 @@ func constFunc() {
 		fmt.Println("\n", x)
 	*/
 	// fmt.Println("bool値返還")
-	// practicBool()
+	// practiceBool()
 	// typeConversion()
-	// praciceArray()
-	// practicMap()
+	// practiceArray()
+	// practiceMap()
 	practiceByte()
 
 	///文字列
@@ -47,7 +49,7 @@ func constFunc() {
 	// fmt.Println(strings.Contains(s, "A"))
 }
 
-func practicBool() {
+func practiceBool() {
 	t, f := true, false
 	fmt.Printf("%T %v %t\n", t, 0, t)
 	fmt.Printf("%T %v %t\n", f, 0, f)
@@ -93,7 +95,7 @@ func typeConversion() {
 	// fmt.Printf(string(h[0]))
 }
 
-func praciceArray() {
+func practiceArray() {
 	/*
 		var a [2]int
 		a[0] = 200
@@ -161,7 +163,7 @@ func praciceArray() {
 
 }
 
-func practicMap() {
+func practiceMap() {
 
 	m := map[string]int{"カフェオレ": 100, "バナナ": 100}
 	fmt.Println(m)

@@ -1,8 +1,8 @@
 package main
 
 import (
-	// "os/user"
-	// "time"
+	"main/practiceIf"
+	"main/trainingFirst"
 )
 
 ///変数宣言　=> var
@@ -28,7 +28,10 @@ func main() {
 	// fmt.Println(user.Current())
 	// fmt.Print(itemCount())
 	// constFunc()
-	commonFunction()
+	// commonFunction()
+	trainingFirst.TrainingFirst()
+	trainingFirst.TrainingFirstAnswer()
+	practiceIf.PracticeIf()
 }
 
 /*
