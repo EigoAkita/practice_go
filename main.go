@@ -1,7 +1,14 @@
 package main
 
 import (
+	"main/errorHandling"
+	"main/practiceDefer"
+	"main/practiceFor"
 	"main/practiceIf"
+	"main/practiceLogging"
+	"main/practicePanicAndRecover"
+	"main/practiceRange"
+	"main/practiceSwitch"
 	"main/trainingFirst"
 )
 
@@ -29,6 +36,14 @@ func main() {
 	// fmt.Print(itemCount())
 	// constFunc()
 	// commonFunction()
+	practicePanicAndRecover.PracticePanicAndRecover()
+	return
+	errorHandling.ErrorHandling()
+	practiceLogging.PracticeLogging()
+	practiceDefer.PracticeDefer()
+	practiceSwitch.PracticeSwitch()
+	practiceRange.PracticeRange()
+	practiceFor.PracticeFor()
 	trainingFirst.TrainingFirst()
 	trainingFirst.TrainingFirstAnswer()
 	practiceIf.PracticeIf()
