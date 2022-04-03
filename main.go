@@ -7,9 +7,11 @@ import (
 	"main/practiceIf"
 	"main/practiceLogging"
 	"main/practicePanicAndRecover"
+	practicepointer "main/practicePointer"
 	"main/practiceRange"
 	"main/practiceSwitch"
 	"main/trainingFirst"
+	"main/trainingSecond"
 )
 
 ///変数宣言　=> var
@@ -36,8 +38,10 @@ func main() {
 	// fmt.Print(itemCount())
 	// constFunc()
 	// commonFunction()
-	practicePanicAndRecover.PracticePanicAndRecover()
+	practicepointer.PracticePointer()
 	return
+	trainingSecond.TrainingSecond()
+	practicePanicAndRecover.PracticePanicAndRecover()
 	errorHandling.ErrorHandling()
 	practiceLogging.PracticeLogging()
 	practiceDefer.PracticeDefer()
