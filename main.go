@@ -2,13 +2,17 @@ package main
 
 import (
 	"main/errorHandling"
+	"main/practiceCommon"
 	"main/practiceDefer"
+	"main/practiceEmbedded"
 	"main/practiceFor"
 	"main/practiceIf"
 	"main/practiceLogging"
+	"main/practiceMethod"
 	"main/practicePanicAndRecover"
 	practicepointer "main/practicePointer"
 	"main/practiceRange"
+	"main/practiceStruct"
 	"main/practiceSwitch"
 	"main/trainingFirst"
 	"main/trainingSecond"
@@ -16,11 +20,11 @@ import (
 
 ///変数宣言　=> var
 var (
-	// n int    = 100
-	// s string = "test"
-	// var t bool = true
-	// var f bool = false
-	// t, f bool = true, false
+// n int    = 100
+// s string = "test"
+// var t bool = true
+// var f bool = false
+// t, f bool = true, false
 )
 
 func main() {
@@ -38,8 +42,12 @@ func main() {
 	// fmt.Print(itemCount())
 	// constFunc()
 	// commonFunction()
-	practicepointer.PracticePointer()
+	practiceCommon.PracticeCommon()
 	return
+	practiceEmbedded.PracticeEmbedded()
+	practiceMethod.PracticeMethod()
+	practiceStruct.PracticeStruct()
+	practicepointer.PracticePointer()
 	trainingSecond.TrainingSecond()
 	practicePanicAndRecover.PracticePanicAndRecover()
 	errorHandling.ErrorHandling()

@@ -1,0 +1,5 @@
+package practiceCommon
+
+func PracticeCommon () {
+	
+}
