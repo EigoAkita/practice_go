@@ -6,6 +6,7 @@ import (
 	"main/practiceDefer"
 	"main/practiceEmbedded"
 	"main/practiceFor"
+	"main/practiceGoroutine"
 	"main/practiceIf"
 	"main/practiceLogging"
 	"main/practiceMethod"
@@ -42,8 +43,9 @@ func main() {
 	// fmt.Print(itemCount())
 	// constFunc()
 	// commonFunction()
-	practiceCommon.PracticeCommon()
+	practiceGoroutine.PracticeGoroutine6()
 	return
+	practiceCommon.PracticeCommon()
 	practiceEmbedded.PracticeEmbedded()
 	practiceMethod.PracticeMethod()
 	practiceStruct.PracticeStruct()
