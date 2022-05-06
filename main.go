@@ -7,7 +7,9 @@ import (
 	"main/practiceEmbedded"
 	"main/practiceFor"
 	"main/practiceGoroutine"
+	"main/practiceHttp"
 	"main/practiceIf"
+	"main/practiceJson"
 	"main/practiceLogging"
 	"main/practiceMethod"
 	"main/practicePanicAndRecover"
@@ -43,8 +45,11 @@ func main() {
 	// fmt.Print(itemCount())
 	// constFunc()
 	// commonFunction()
-	practiceGoroutine.PracticeGoroutine6()
+	practiceJson.PracticeHmac()
 	return
+	practiceJson.PracticeJson()
+	practiceHttp.PracticeHttp()
+	practiceGoroutine.PracticeGoroutine6()
 	practiceCommon.PracticeCommon()
 	practiceEmbedded.PracticeEmbedded()
 	practiceMethod.PracticeMethod()
