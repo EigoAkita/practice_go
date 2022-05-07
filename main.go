@@ -12,6 +12,7 @@ import (
 	"main/practiceJson"
 	"main/practiceLogging"
 	"main/practiceMethod"
+	"main/practicePackage"
 	"main/practicePanicAndRecover"
 	practicepointer "main/practicePointer"
 	"main/practiceRange"
@@ -45,8 +46,9 @@ func main() {
 	// fmt.Print(itemCount())
 	// constFunc()
 	// commonFunction()
-	practiceJson.PracticeHmac()
+	practicePackage.PracticePackage()
 	return
+	practiceJson.PracticeHmac()
 	practiceJson.PracticeJson()
 	practiceHttp.PracticeHttp()
 	practiceGoroutine.PracticeGoroutine6()
