@@ -89,9 +89,19 @@ func PracticeIni() {
 
 //----------株価分析----------
 
+//原因不明エラーコード by official talib example code
+// func PracticeStockPrice() {
+// 	spy, _ := quote.NewQuoteFromYahoo("spy", "2019-04-01", "2019-04-04", quote.Daily, true)
+// 	fmt.Print(spy.CSV())
+// 	rsi2 := talib.Rsi(spy.Close, 2)
+// 	fmt.Println(rsi2)
+// }
+
+//和哉様ご回答コード by Udemy
+
 func PracticeStockPrice() {
-	spy, _ := quote.NewQuoteFromYahoo("spy", "2019-04-01", "2019-04-04", quote.Daily, true)
-	fmt.Print(spy.CSV())
-	rsi2 := talib.Rsi(spy.Close, 2)
-	fmt.Println(rsi2)
+    spy, _ := quote.NewQuoteFromCoinbase("BTC-USD", "2021-04-01", "2021-04-04", quote.Daily)
+    fmt.Print(spy.CSV())
+    rsi2 := talib.Rsi(spy.Close, 2)
+    fmt.Println(rsi2)
 }
