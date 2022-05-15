@@ -2,6 +2,7 @@ package main
 
 import (
 	"main/errorHandling"
+	"main/makeWebApplications"
 	"main/practiceCommon"
 	"main/practiceDefer"
 	"main/practiceEmbedded"
@@ -16,6 +17,7 @@ import (
 	"main/practicePanicAndRecover"
 	practicepointer "main/practicePointer"
 	"main/practiceRange"
+	"main/practiceSqlite"
 	"main/practiceStruct"
 	"main/practiceSwitch"
 	"main/trainingFirst"
@@ -46,8 +48,10 @@ func main() {
 	// fmt.Print(itemCount())
 	// constFunc()
 	// commonFunction()
-	practicePackage.PracticePackage()
+	makeWebApplications.MakeWebApplications()
 	return
+	practiceSqlite.PracticeSqlite()
+	practicePackage.PracticePackage()
 	practiceJson.PracticeHmac()
 	practiceJson.PracticeJson()
 	practiceHttp.PracticeHttp()

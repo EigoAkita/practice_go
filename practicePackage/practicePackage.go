@@ -100,8 +100,10 @@ func PracticeIni() {
 //和哉様ご回答コード by Udemy
 
 func PracticeStockPrice() {
-    spy, _ := quote.NewQuoteFromCoinbase("BTC-USD", "2021-04-01", "2021-04-04", quote.Daily)
+    spy, _ := quote.NewQuoteFromCoinbase("BTC-USD", "2021-04-01", "2021-05-01", quote.Daily)
     fmt.Print(spy.CSV())
     rsi2 := talib.Rsi(spy.Close, 2)
     fmt.Println(rsi2)
+	mva := talib.Ema(spy.Close,14)
+	fmt.Println(mva)
 }
